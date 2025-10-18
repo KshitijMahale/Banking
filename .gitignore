@@ -1,10 +1,23 @@
-HELP.md
+# -------------------------------------------------------------------
+# Build output
+# -------------------------------------------------------------------
 target/
-.mvn/wrapper/maven-wrapper.jar
+build/
 !**/src/main/**/target/
 !**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-### STS ###
+# -------------------------------------------------------------------
+# Maven Wrapper
+# -------------------------------------------------------------------
+.mvn/wrapper/maven-wrapper.jar
+
+# -------------------------------------------------------------------
+# IDEs and Editors
+# -------------------------------------------------------------------
+
+# STS / Eclipse
 .apt_generated
 .classpath
 .factorypath
@@ -13,21 +26,48 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
+# IntelliJ IDEA
+.idea/
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# VS Code
 .vscode/
+
+# -------------------------------------------------------------------
+# Logs and temp files
+# -------------------------------------------------------------------
+*.log
+logs/
+*.tmp
+*.bak
+
+# -------------------------------------------------------------------
+# Environment and config files
+# -------------------------------------------------------------------
+# Don't commit real credentials or environment variables
+.env
+application.properties
+application.yml
+application-local.properties
+application-dev.properties
+application-test.properties
+
+# -------------------------------------------------------------------
+# OS / System Files
+# -------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------------------------------------------------
+# Misc
+# -------------------------------------------------------------------
+HELP.md
