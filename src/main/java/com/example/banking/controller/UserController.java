@@ -1,12 +1,16 @@
 package com.example.banking.controller;
 
 import com.example.banking.dto.*;
+import com.example.banking.entity.Transaction;
+import com.example.banking.service.impl.BankStatement;
 import com.example.banking.service.impl.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/user")
